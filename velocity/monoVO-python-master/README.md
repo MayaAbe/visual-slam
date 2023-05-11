@@ -5,9 +5,16 @@ port from https://github.com/yueying/LearningVO
 ![map](map.png)
 
 ### Requirements
-* Python 2.7
+* ~Python 2.7~ 2to3でPython3.10仕様に変換済
 * Numpy
-* OpenCV
+* OpenCV  
+
+OpenCVの使い方は
+
+``` py
+python -m pip install -U pip setuptools
+python -m pip install -U opencv-python opencv-contrib-python
+```
 
 ### Dataset
  [KITTI odometry data set (grayscale, 22 GB)](http://www.cvlibs.net/datasets/kitti/eval_odometry.php)
@@ -23,3 +30,5 @@ python test.py
 2. [Monocular Visual Odometry using OpenCV](http://avisingh599.github.io/vision/monocular-vo/) and its related project report [_Monocular Visual Odometry_](http://avisingh599.github.io/assets/ugp2-report.pdf) | Avi Singh
  
 Search "cv2.findEssentialMat", "cv2.recoverPose" etc. in github, you'll find more python projects on slam / visual odometry / 3d reconstruction
+## 参考
+https://www.kkaneko.jp/ai/win/visualodometry.html
