@@ -9,8 +9,8 @@ vo = VisualOdometry(cam, 'C:/Users/abema/git-organization/Mechatronics/visual-sl
 
 traj = np.zeros((600,600,3), dtype=np.uint8)
 
-for img_id in range(4541):
-	img = cv2.imread('C:/Users/abema/git-organization/Mechatronics/visual-slam/velocity/dataset/odometry_gray/image_0/'+str(img_id).zfill(6)+'.png', 0)
+for img_id in xrange(4541):
+	img = cv2.imread('.C:/Users/abema/git-organization/Mechatronics/visual-slam/velocity/dataset/odometry_gray/'+str(img_id).zfill(6)+'.png', 0)
 
 	vo.update(img, img_id)
 
